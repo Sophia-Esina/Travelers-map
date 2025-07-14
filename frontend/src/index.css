@@ -1,0 +1,34 @@
+@import url('fonts/font-awesome.css');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: cursive;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+		url('https://storage.yandexcloud.net/storage.yasno.media/nat-geo/images/2021/9/29/31cf9589de47428ca7d85cbfb696f248.max-2500x1500.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+html,
+body,
+#root {
+	height: 100%;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

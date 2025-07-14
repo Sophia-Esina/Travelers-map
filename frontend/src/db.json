@@ -1,0 +1,427 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "login": "travel_lover91",
+      "password": "password123",
+      "photo": "https://img.wattpad.com/useravatar/_Skarlettt_.128.606158.jpg",
+      "country": "Germany",
+      "registed_at": "2021-04-15",
+      "biography": "Обожаю исследовать новые города, культуру и гастрономию. Путешествия — моя страсть!"
+    },
+    {
+      "id": "u2",
+      "login": "nomad_maria",
+      "password": "securepass456",
+      "photo": "https://example.com/photos/u2.jpg",
+      "country": "Spain",
+      "registed_at": "2022-08-10",
+      "biography": "Дизайнер, который работает удалённо и постоянно в пути. Хочу побывать на всех континентах."
+    },
+    {
+      "id": "u3",
+      "login": "adventure_tom",
+      "password": "adventure789",
+      "photo": "https://example.com/photos/u3.jpg",
+      "country": "Canada",
+      "registed_at": "2023-01-03",
+      "biography": "Люблю горы, леса и приключения. Не могу сидеть на месте!"
+    }
+  ],
+  "travels": [
+    {
+      "id": "t1",
+      "user_id": "u1",
+      "coordinates": "48.8566, 2.3522",
+      "title": "Весна в Париже",
+      "country": "France",
+      "city": "Paris",
+      "notes": "Париж в апреле — это особенная атмосфера...",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Pont_Alexandre_III_-_01.jpg/960px-Pont_Alexandre_III_-_01.jpg",
+      "date": "2023-04-10",
+      "published": "true"
+    },
+    {
+      "id": "t2",
+      "user_id": "u2",
+      "coordinates": "41.9028, 12.4964",
+      "title": "Римские каникулы",
+      "country": "Italy",
+      "city": "Rome",
+      "notes": "Рим — это город, где история встречается с современностью...",
+      "image_url": "https://images.unsplash.com/photo-1549893074-24ec0d4f4f3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "date": "2022-11-05",
+      "published": "false"
+    },
+    {
+      "id": "t3",
+      "user_id": "u3",
+      "coordinates": "35.6895, 139.6917",
+      "title": "Токийская неоновая ночь",
+      "country": "Japan",
+      "city": "Tokyo",
+      "notes": "Токио — это город контрастов...",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Ch%C3%A2teau_de_Himeji02.jpg/960px-Ch%C3%A2teau_de_Himeji02.jpg",
+      "date": "2024-03-18",
+      "published": true
+    },
+    {
+      "id": "t4",
+      "user_id": "u1",
+      "coordinates": "59.3293, 18.0686",
+      "title": "Скандинавское лето",
+      "country": "Sweden",
+      "city": "Stockholm",
+      "notes": "Стокгольм летом — это белые ночи и уютные улочки. Город на воде, множество островов и исторических зданий. Прогулки по старому городу и посещение музеев оставили яркие воспоминания.",
+      "image_url": "https://dynamic-media.tacdn.com/media/photo-o/2f/0a/be/a1/caption.jpg?w=700&h=500&s=1",
+      "date": "2021-07-20",
+      "published": "true"
+    },
+    {
+      "id": "t5",
+      "user_id": "u2",
+      "coordinates": "-33.8688, 151.2093",
+      "title": "Пляжи Сиднея",
+      "country": "Australia",
+      "city": "Sydney",
+      "notes": "Сидней — это город, где встречаются пляжи и городская жизнь. Сёрфинг на Бонди-Бич, посещение Оперного театра и прогулки по набережной сделали поездку незабываемой.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Opera_House_and_ferry._Sydney.jpg/960px-Opera_House_and_ferry._Sydney.jpg",
+      "date": "2023-12-01",
+      "published": "false"
+    },
+    {
+      "id": "t6",
+      "user_id": "u3",
+      "coordinates": "27.1751, 78.0421",
+      "title": "Тадж-Махал в утреннем свете",
+      "country": "India",
+      "city": "Agra",
+      "notes": "Тадж-Махал — это символ любви и архитектурного мастерства. Утренний свет придаёт ему особое очарование. Величие и красота этого памятника оставляют глубокое впечатление.",
+      "image_url": "https://dynamic-media.tacdn.com/media/photo-o/2e/eb/9d/ea/caption.jpg?w=800&h=600&s=1",
+      "date": "2023-10-14",
+      "published": true
+    },
+    {
+      "id": "t7",
+      "user_id": "u1",
+      "coordinates": "40.7128, -74.0060",
+      "title": "Улицы Нью-Йорка",
+      "country": "USA",
+      "city": "New York",
+      "notes": "Нью-Йорк — город, который никогда не спит. Таймс-сквер, Центральный парк и небоскрёбы создают уникальную атмосферу. Каждый район города имеет свой характер и атмосферу.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Times_Square_2009.jpg/960px-Times_Square_2009.jpg",
+      "date": "2025-05-03",
+      "published": "false"
+    },
+    {
+      "id": "t8",
+      "user_id": "u2",
+      "coordinates": "-13.1631, -72.5450",
+      "title": "Поход к Мачу-Пикчу",
+      "country": "Peru",
+      "city": "Cusco",
+      "notes": "Поход к Мачу-Пикчу — это путешествие в сердце инкской цивилизации. Восхождение по древним тропам, посещение археологических памятников и виды на горы оставили незабываемые впечатления.",
+      "image_url": "https://example.com/images/machu.jpg",
+      "date": "2023-09-22",
+      "published": "false"
+    },
+    {
+      "id": "t9",
+      "user_id": "u3",
+      "coordinates": "64.9631, -19.0208",
+      "title": "Северное сияние в Исландии",
+      "country": "Iceland",
+      "city": "Reykjavik",
+      "notes": "Сияние словно из сказки. Природа здесь невероятна.",
+      "image_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/6f/16/a1/extreme-iceland-private.jpg?w=700&h=500&s=1",
+      "date": "2024-01-12",
+      "published": true
+    },
+    {
+      "id": "t10",
+      "user_id": "u1",
+      "coordinates": "55.7558, 37.6176",
+      "title": "Московская зима",
+      "country": "Russia",
+      "city": "Moscow",
+      "notes": "Красная площадь в снегу — магическое зрелище.",
+      "image_url": "https://img.goodfon.ru/original/800x600/b/3d/krasnaia-ploshchad-khram-vasiliia-blazhennogo-moskovskii-kre.jpg",
+      "date": "2022-12-25",
+      "published": true
+    },
+    {
+      "id": "t11",
+      "user_id": "u1",
+      "coordinates": "43.7102, 7.2620",
+      "title": "Лазурный берег",
+      "country": "France",
+      "city": "Nice",
+      "notes": "Пляжи Ниццы и лазурное море — одно из лучших мест для летнего отдыха.",
+      "image_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/83/cb/c3/personalised-tour.jpg?w=1100&h=-1&s=1",
+      "date": "2022-06-15",
+      "published": "false"
+    },
+    {
+      "id": "t12",
+      "user_id": "u1",
+      "coordinates": "41.9028, 12.4964",
+      "title": "Прогулка по Риму",
+      "country": "Italy",
+      "city": "Rome",
+      "notes": "Колизей, Пантеон и уютные улочки — дух древнего Рима на каждом шагу.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Rome-VillaBorghese-TempleEsculape.jpg/960px-Rome-VillaBorghese-TempleEsculape.jpg",
+      "date": "2023-05-20",
+      "published": "true"
+    },
+    {
+      "id": "t13",
+      "user_id": "u1",
+      "coordinates": "45.4408, 12.3155",
+      "title": "Гондолы Венеции",
+      "country": "Italy",
+      "city": "Venice",
+      "notes": "Уникальная атмосфера города на воде, романтические каналы и мосты.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Venezia-punta_della_dogana.jpg/960px-Venezia-punta_della_dogana.jpg",
+      "date": "2022-09-12",
+      "published": "false"
+    },
+    {
+      "id": "t14",
+      "user_id": "u1",
+      "coordinates": "43.7696, 11.2558",
+      "title": "Флоренция — колыбель Ренессанса",
+      "country": "Italy",
+      "city": "Florence",
+      "notes": "Галерея Уффици, собор Дуомо и архитектура, которая вдохновляет.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Palais_Strozzi_-_Florence_%28IT52%29_-_2022-08-31_-_1.jpg/960px-Palais_Strozzi_-_Florence_%28IT52%29_-_2022-08-31_-_1.jpg",
+      "date": "2021-10-05",
+      "published": "false"
+    },
+    {
+      "id": "t15",
+      "user_id": "u1",
+      "coordinates": "45.0703, 7.6869",
+      "title": "Турин и альпийский воздух",
+      "country": "Italy",
+      "city": "Turin",
+      "notes": "Север Италии с богатой историей, Альпы на горизонте и уютные кафе.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Carrara.PNG/960px-Carrara.PNG",
+      "date": "2024-02-18",
+      "published": "false"
+    },
+    {
+      "id": "t16",
+      "user_id": "u1",
+      "coordinates": "44.4268, 26.1025",
+      "title": "Бухарест — Париж Востока",
+      "country": "Romania",
+      "city": "Bucharest",
+      "notes": "Современный город с интересной историей и архитектурой.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Liscani_Street_3.jpg/960px-Liscani_Street_3.jpg",
+      "date": "2023-08-11",
+      "published": "false"
+    },
+    {
+      "id": "t17",
+      "user_id": "u1",
+      "coordinates": "40.4168, -3.7038",
+      "title": "Испанское солнце в Мадриде",
+      "country": "Spain",
+      "city": "Madrid",
+      "notes": "Королевский дворец, музеи и горячая атмосфера столицы Испании.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Madrid_%2838624991251%29.jpg/960px-Madrid_%2838624991251%29.jpg",
+      "date": "2023-03-30",
+      "published": "false"
+    },
+    {
+      "id": "mdN296q"
+    },
+    {
+      "id": "N8Nb9V1"
+    },
+    {
+      "id": "bhryiqu"
+    },
+    {
+      "id": "zuV6oIS"
+    },
+    {
+      "id": "67YZax2"
+    },
+    {
+      "user_id": "u1",
+      "coordinates": "30.3285, 35.4444",
+      "title": "Исследовать Петру",
+      "country": "Jordan",
+      "city": "Petra",
+      "notes": "Археологический рай для любителей истории.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Petra-7.JPG/960px-Petra-7.JPG",
+      "date": "2025-09-01",
+      "id": "r_gPUMz"
+    }
+  ],
+  "dreams": [
+    {
+      "id": "d1",
+      "user_id": "u1",
+      "coordinates": "-2.3763, -55.8511",
+      "title": "Побывать в Амазонии",
+      "country": "Brazil",
+      "city": "Manaus",
+      "notes": "Мечтаю увидеть джунгли и диких животных.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Cascata_caracol2.jpg/960px-Cascata_caracol2.jpg",
+      "date": "2025-01-01"
+    },
+    {
+      "id": "d2",
+      "user_id": "u3",
+      "coordinates": "-90.0000, 0.0000",
+      "title": "Экспедиция в Антарктиду",
+      "country": "Antarctica",
+      "city": "–",
+      "notes": "Хочу увидеть айсберги и пингвинов своими глазами.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Sun_on_snow_banks_Neumaier_Channel_Coral_Princess_Antarctica.jpg/960px-Sun_on_snow_banks_Neumaier_Channel_Coral_Princess_Antarctica.jpg",
+      "date": "2025-02-15"
+    },
+    {
+      "id": "d3",
+      "user_id": "u3",
+      "coordinates": "46.8523, -121.7603",
+      "title": "Восхождение на Рейнир",
+      "country": "USA",
+      "city": "Washington",
+      "notes": "Сложный, но очень желанный маршрут.",
+      "image_url": "https://example.com/images/rainier.jpg",
+      "date": "2025-06-20"
+    },
+    {
+      "id": "d4",
+      "user_id": "u2",
+      "coordinates": "43.7384, 7.4246",
+      "title": "Жизнь в Монако на месяц",
+      "country": "Monaco",
+      "city": "Monaco",
+      "notes": "Хочу почувствовать гламур и роскошь средиземноморья.",
+      "image_url": "https://example.com/images/monaco.jpg",
+      "date": "2025-07-10"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "932e",
+      "hash": "0.67334695197122329535233120623161084949970245361328",
+      "user": {
+        "id": "u1",
+        "photo": "https://example.com/photos/u1.jpg",
+        "login": "travel_lover91",
+        "password": "password123",
+        "registeredAt": "2021-04-15",
+        "biography": "Обожаю исследовать новые города, культуру и гастрономию. Путешествия — моя страсть!"
+      }
+    },
+    {
+      "id": "94ff",
+      "hash": "0.66546585211734232689906320956652052700519561767578",
+      "user": {
+        "id": "u1",
+        "login": "travel_lover91",
+        "password": "password123",
+        "photo": "https://img.wattpad.com/useravatar/_Skarlettt_.128.606158.jpg",
+        "country": "Germany",
+        "registeredAt": "2021-04-15",
+        "biography": "Обожаю исследовать новые города, культуру и гастрономию. Путешествия — моя страсть!"
+      }
+    },
+    {
+      "hash": "0.95979798161358997887759869627188891172409057617188",
+      "user": {
+        "id": "u1",
+        "login": "travel_lover91",
+        "password": "password123",
+        "photo": "https://img.wattpad.com/useravatar/_Skarlettt_.128.606158.jpg",
+        "country": "Germany",
+        "registeredAt": "2021-04-15",
+        "biography": "Обожаю исследовать новые города, культуру и гастрономию. Путешествия — моя страсть!"
+      },
+      "id": "P9EiVAo"
+    },
+    {
+      "hash": "0.61944848656802242725660789801622740924358367919922",
+      "user": {
+        "id": "u1",
+        "login": "travel_lover91",
+        "password": "password123",
+        "photo": "https://img.wattpad.com/useravatar/_Skarlettt_.128.606158.jpg",
+        "country": "Germany",
+        "registeredAt": "2021-04-15",
+        "biography": "Обожаю исследовать новые города, культуру и гастрономию. Путешествия — моя страсть!"
+      },
+      "id": "3nsqxAR"
+    },
+    {
+      "hash": "0.02442880175241490814386224883492104709148406982422",
+      "user": {
+        "id": "u1",
+        "login": "travel_lover91",
+        "password": "password123",
+        "photo": "https://img.wattpad.com/useravatar/_Skarlettt_.128.606158.jpg",
+        "country": "Germany",
+        "registeredAt": "2021-04-15",
+        "biography": "Обожаю исследовать новые города, культуру и гастрономию. Путешествия — моя страсть!"
+      },
+      "id": "SoPWgtl"
+    },
+    {
+      "hash": "0.07217999103853423026322388977860100567340850830078",
+      "user": {
+        "id": "u1",
+        "login": "travel_lover91",
+        "password": "password123",
+        "photo": "https://img.wattpad.com/useravatar/_Skarlettt_.128.606158.jpg",
+        "country": "Germany",
+        "registeredAt": "2021-04-15",
+        "biography": "Обожаю исследовать новые города, культуру и гастрономию. Путешествия — моя страсть!"
+      },
+      "id": "-cLsuD-"
+    },
+    {
+      "hash": "0.37799993899664929841719640535302460193634033203125",
+      "user": {
+        "id": "u1",
+        "login": "travel_lover91",
+        "password": "password123",
+        "photo": "https://img.wattpad.com/useravatar/_Skarlettt_.128.606158.jpg",
+        "country": "Germany",
+        "registeredAt": "2021-04-15",
+        "biography": "Обожаю исследовать новые города, культуру и гастрономию. Путешествия — моя страсть!"
+      },
+      "id": "L9PBSc9"
+    },
+    {
+      "hash": "0.25882567084870911067184806597651913762092590332031",
+      "user": {
+        "id": "u1",
+        "login": "travel_lover91",
+        "password": "password123",
+        "photo": "https://img.wattpad.com/useravatar/_Skarlettt_.128.606158.jpg",
+        "country": "Germany",
+        "registeredAt": "2021-04-15",
+        "biography": "Обожаю исследовать новые города, культуру и гастрономию. Путешествия — моя страсть!"
+      },
+      "id": "bf2V__V"
+    },
+    {
+      "hash": "0.70169823867010117091069787420565262436866760253906",
+      "user": {
+        "id": "u1",
+        "login": "travel_lover91",
+        "password": "password123",
+        "photo": "https://img.wattpad.com/useravatar/_Skarlettt_.128.606158.jpg",
+        "country": "Germany",
+        "registeredAt": "2021-04-15",
+        "biography": "Обожаю исследовать новые города, культуру и гастрономию. Путешествия — моя страсть!"
+      },
+      "id": "UovHG44"
+    }
+  ]
+}
