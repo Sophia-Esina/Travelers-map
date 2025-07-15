@@ -143,12 +143,14 @@ const MapPageContainer = () => {
 						{filter !== 'dream' && <TravelsPlacemark />}
 						{filter !== 'travel' && <DreamsPlacemark />}
 					</Map>
-					<MapSearch
-						ymapsInstance={ymapsInstance}
-						onResult={(coords) => {
-							setSelectedCoords(coords);
-						}}
-					/>
+					{ymapsInstance && (
+						<MapSearch
+							ymapsInstance={ymapsInstance}
+							onResult={(coords) => {
+								setSelectedCoords(coords);
+							}}
+						/>
+					)}
 				</YMaps>
 				{showModal && selectedCoords && (
 					<AddTravelOrDream

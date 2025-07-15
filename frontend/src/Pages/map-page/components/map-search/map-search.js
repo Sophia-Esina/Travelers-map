@@ -11,7 +11,6 @@ const SearchWrapper = styled.div`
 	border-radius: 6px;
 	display: flex;
 	align-items: center;
-	/* gap: 8px; */
 	font-family: cursive;
 
 	input {

@@ -42,7 +42,7 @@ Dotenv
 
 Frontend:
 
-React 19
+React 18
 Redux + Redux Thunk
 React Router DOM
 Styled-components

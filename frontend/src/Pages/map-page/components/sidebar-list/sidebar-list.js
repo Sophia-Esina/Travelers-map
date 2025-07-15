@@ -75,8 +75,14 @@ export const SidebarList = ({ onSelect }) => {
 	useEffect(() => {
 		Promise.all([request('/travel'), request('/dream')])
 			.then(([travelRes, dreamRes]) => {
-				const travels = travelRes?.data?.travels || [];
-				const dreams = dreamRes?.data?.dreams || [];
+				const travels = (travelRes?.data?.travels || []).map((item) => ({
+					...item,
+					type: 'travel',
+				}));
+				const dreams = (dreamRes?.data?.dreams || []).map((item) => ({
+					...item,
+					type: 'dream',
+				}));
 				setItems([...travels, ...dreams]);
 			})
 			.catch((error) => {
@@ -84,7 +90,7 @@ export const SidebarList = ({ onSelect }) => {
 			});
 	}, []);
 
-	const uniqueCountries = [...new Set(items.map((item) => item.country))];
+	const uniqueCity = [...new Set(items.map((item) => item.city))];
 
 	return (
 		<>
@@ -96,15 +102,14 @@ export const SidebarList = ({ onSelect }) => {
 					<>
 						<h2>Ваши метки</h2>
 						<List>
-							{uniqueCountries.map((country) => {
-								const mark = items.find(
-									(item) => item.country === country,
-								);
+							{uniqueCity.map((city) => {
+								const mark = items.find((item) => item.city === city);
+
 								if (!mark) return null;
 
 								return (
 									<ListItem
-										key={country}
+										key={city}
 										type={mark.type}
 										onClick={() => {
 											const coords = mark.coordinates
@@ -113,7 +118,7 @@ export const SidebarList = ({ onSelect }) => {
 											onSelect(coords);
 										}}
 									>
-										{country}
+										{city}
 									</ListItem>
 								);
 							})}

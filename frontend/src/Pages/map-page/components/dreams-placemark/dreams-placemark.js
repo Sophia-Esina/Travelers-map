@@ -19,20 +19,22 @@ export const DreamsPlacemark = () => {
 					geometry={dream.coordinates
 						.split(',')
 						.map((coord) => parseFloat(coord.trim()))}
+					modules={['geoObject.addon.balloon', 'geoObject.addon.hint']}
 					properties={{
-						balloonContent: `
-						<div>
-							<strong>${dream.title}</strong><br/>
+						balloonContentHeader: dream.title,
+						balloonContentBody: `
+						  <div>
 							${dream.country}<br/>
 							<img src="${dream.imageUrl}" width="100"/><br/>
-							${new Date(dream.date).toLocaleDateString()}<br/>
 							<a href="/dream/${dream.id}">Подробнее...</a>
 						  </div>
-						  `,
+						`,
 					}}
 					options={{
-						iconColor: '#ff671e',
 						balloonPanelMaxMapArea: 0,
+						hasBalloon: true,
+						openBalloonOnClick: true,
+						iconColor: '#ff671e',
 					}}
 				/>
 			))}

@@ -19,19 +19,21 @@ export const TravelsPlacemark = () => {
 					geometry={travel.coordinates
 						.split(',')
 						.map((coord) => parseFloat(coord.trim()))}
+					modules={['geoObject.addon.balloon', 'geoObject.addon.hint']}
 					properties={{
-						balloonContent: `
-						<div>
-							<strong>${travel.title}</strong><br/>
-							${travel.country}<br/>
-							<img src="${travel.imageUrl}" width="100"/><br/>
-							${new Date(travel.date).toLocaleDateString()}<br/>
-							<a href="/travel/${travel.id}">Подробнее...</a>
-						  </div>
-						  `,
+						balloonContentHeader: travel.title,
+						balloonContentBody: `
+      						<div>
+        						${travel.country}<br/>
+        						<img src="${travel.imageUrl}" width="100"/><br/>
+        						<a href="/travel/${travel.id}">Подробнее...</a>
+      						</div>
+    						`,
 					}}
 					options={{
 						balloonPanelMaxMapArea: 0,
+						hasBalloon: true,
+						openBalloonOnClick: true,
 					}}
 				/>
 			))}

@@ -1,8 +1,8 @@
 const CONTINENT_MAP = {
 	Europe: ['Germany', 'France', 'Spain', 'Italy', 'Sweden', 'Russia', 'Romania'],
 	Asia: ['Japan', 'India', 'Jordan'],
-	NorthAmerica: ['Canada', 'USA'],
-	SouthAmerica: ['Peru', 'Brazil'],
+	North_America: ['Canada', 'USA'],
+	South_America: ['Peru', 'Brazil'],
 	Oceania: ['Australia'],
 	Africa: [],
 	Antarctica: ['Antarctica'],

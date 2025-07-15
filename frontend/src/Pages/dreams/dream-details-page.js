@@ -46,7 +46,6 @@ const DreamDetailsPageContainer = ({ className }) => {
 		});
 	};
 
-	// Перенос в путешествия
 	const handleMoveDreamToTravel = async () => {
 		const travel = await dispatch(moveDreamToTravelsAsync(dream.id));
 		navigate(`/travel/${travel.id}`);

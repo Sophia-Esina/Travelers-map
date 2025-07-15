@@ -46,14 +46,12 @@ const TravelDetailsPageContainer = ({ className }) => {
 		});
 	};
 
-	// Публикация
 	const handlePublish = () => {
 		dispatch(saveTravelAsync({ id: travel.id, published: true })).then(() => {
 			navigate(`/travel/${travel.id}`);
 		});
 	};
 
-	// Удаление
 	const handleRemove = (id) => {
 		dispatch(removeTravelAsync(id)).then(() => {
 			navigate('/travel');

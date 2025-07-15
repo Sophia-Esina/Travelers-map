@@ -46,7 +46,7 @@ const UserProfileContainer = ({ className }) => {
 
 export const UserProfile = styled(UserProfileContainer)`
 	display: flex;
-	flex-direction: column; /* вертикально! */
+	flex-direction: column;
 	align-items: center;
 	padding: 30px;
 	margin: 50px auto;

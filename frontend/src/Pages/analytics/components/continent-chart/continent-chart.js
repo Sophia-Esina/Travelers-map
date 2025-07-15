@@ -5,10 +5,10 @@ import styled from 'styled-components';
 
 const CenteredPieChartWrapper = styled.div`
 	display: flex;
-	justify-content: center; /* горизонтально центрирует */
-	align-items: center; /* вертикально центрирует */
+	justify-content: center;
+	align-items: center;
 	width: 100%;
-	height: 320px; /* чуть больше чем высота PieChart */
+	height: 320px;
 `;
 
 export const ContinentChart = ({ travels }) => {
@@ -48,23 +48,6 @@ export const ContinentChart = ({ travels }) => {
 			</PieChart>
 		</CenteredPieChartWrapper>
 	);
-};
-
-ContinentChart.propTypes = {
-	travels: PropTypes.arrayOf(
-		PropTypes.shape({
-			id: PropTypes.string.isRequired,
-			user: PropTypes.string.isRequired,
-			title: PropTypes.string.isRequired,
-			coordinates: PropTypes.string.isRequired,
-			country: PropTypes.string.isRequired,
-			city: PropTypes.string.isRequired,
-			date: PropTypes.string.isRequired,
-			imageUrl: PropTypes.string,
-			notes: PropTypes.string,
-			published: PropTypes.bool,
-		}),
-	).isRequired,
 };
 
 ContinentChart.propTypes = {
