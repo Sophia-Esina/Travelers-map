@@ -1,24 +1,16 @@
 FROM node:18
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
-COPY backend/package*.json ./backend/
-COPY frontend/package*.json ./frontend/
-
-WORKDIR /app/backend
-RUN npm install
-
-WORKDIR /app/frontend
-RUN npm install
-RUN npm run build
-
-WORKDIR /app
 COPY . .
 
-RUN cp -r frontend/build backend/build
+WORKDIR /usr/src/app/frontend
+RUN npm install 
+RUN npm run build
 
-WORKDIR /app/backend
+WORKDIR /usr/src/app/backend
+RUN npm install
 
 EXPOSE 5000
 
-CMD ["node", "app.js"]
+CMD [ "node", "app.js" ]
